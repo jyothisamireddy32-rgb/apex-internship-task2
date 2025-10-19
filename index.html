@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="contactForm" action="" method="post">
+        <table>
+            <tr>
+                <td>FULL NAME :</td>
+                <td><input type="text" name="fullname" placeholder="Enter Your Full Name" required></td>
+            </tr>
+            <tr>
+                <td>EMAIL :</td>
+                <td><input type="email" name="email" placeholder="example@email.com" required></td>
+            </tr>
+            <tr>
+                <td>PASSWORD :</td>
+                <td><input type="password" name="password" placeholder="At least 6 characters" required></td>
+            </tr>
+            <tr>
+                <td>AGE :</td>
+                <td><input type="number" name="age" min="1" max="100" required></td>
+            </tr>
+            <tr>
+                <td>DATE OF BIRTH :</td>
+                <td><input type="date" name="dob" required></td>
+            </tr>
+            <tr><td colspan="2">&nbsp;</td></tr>
+            <tr>
+                <td>GENDER :</td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="others"> Others
+                </td>
+            </tr>
+            <tr><td colspan="2">&nbsp;</td></tr>
+            <tr>
+                <td>SKILLS :</td>
+                <td>
+                    <input type="checkbox" name="skills" value="html"> HTML
+                    <input type="checkbox" name="skills" value="css"> CSS
+                    <input type="checkbox" name="skills" value="javascript"> JavaScript
+                </td>
+            </tr>
+            <tr>
+                <td>COUNTRY :</td>
+                <td>
+                    <select name="country" required>
+                        <option value="">Select your country</option>
+                        <option value="india">INDIA</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>ADDRESS :</td>
+                <td><textarea name="address" rows="2" placeholder="Enter Your Full Address" required></textarea></td>
+            </tr>
+            <tr>
+                <td>UPLOAD PROFILE PHOTO :</td>
+                <td><input type="file" name="profile_photo" accept="image/*" required></td>
+            </tr>
+            <tr>
+                <td>FAV COLOR :</td>
+                <td><input type="color" name="favcolor"></td>
+            </tr>
+            <tr>
+                <td>RATE OUR WEBSITE :</td>
+                <td><input type="range" name="rating" min="1" max="10"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit">Submit</button></td>
+            </tr>
+        </table>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

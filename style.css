@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    background: bisque;
+    color: #111827;
+    padding: 30px;
+}
+
+form{
+    max-width: 600px;
+    margin:auto;
+    background:#fff;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 6px 15px rgba(64, 103, 139, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td:first-child {
+    width: 35%;
+    font-weight: bold;
+}
+
+td {
+    padding: 8px 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+input[type="color"],
+input[type="range"],
+select,
+textarea {
+    width: calc(100% - 160px);
+    padding: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-left: 150px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body { padding: 10px; }
+    form { padding: 15px; }
+    table, tr, td { display: block; width: 100%; }
+    td { padding: 5px 0; }
+    input, select, textarea, button { width: 100% !important; margin: 5px 0; }
+    button { margin-left: 0; }
+}
